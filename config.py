@@ -66,7 +66,7 @@ SUBMODELS = {
 GRID_SIZE = 51              # Chebyshev nodes per dimension (M + 1)
 BETA_LOWER = -20.0          # parameter box lower bound
 BETA_UPPER = 20.0           # parameter box upper bound
-PRIMARY_EPS = 1e-2          # DMRG-cross accuracy tolerance
+PRIMARY_EPS = 1e-5          # DMRG-cross accuracy tolerance
 DMRG_MAX_TRIES = 10
 
 # =============================================================================

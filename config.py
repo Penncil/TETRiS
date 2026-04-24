@@ -29,7 +29,6 @@ CATEGORICAL_TO_BINARY = {
         # reference: "22-90 days" (control window)
     },
     "quarter": {
-        "season2": "Q2",
         "season3": "Q3",
         "season4": "Q4",
         # reference: Q1
@@ -40,7 +39,6 @@ CATEGORICAL_TO_BINARY = {
 # entry per covariate, in this order.
 COVARIATE_COLS = [
     "exposure_RW1",
-    "season2",
     "season3",
     "season4",
 ]
@@ -56,7 +54,7 @@ SUBGROUP_VALUES = ["Pfizer-BioNTech", "Moderna"]
 # (omitted covariates are fixed at 0 during optimization).
 # =============================================================================
 SUBMODELS = {
-    "full":      ["exposure_RW1", "season2", "season3", "season4"],
+    "full":      ["exposure_RW1", "season3", "season4"],
     "no_season": ["exposure_RW1"],
 }
 
